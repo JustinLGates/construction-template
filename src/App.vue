@@ -22,6 +22,11 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+@import "./assets/_variables.scss";
+@import "bootstrap";
+@import "./assets/_overrides.scss";
+</style>
 <style>
 #app {
   display: flex;
@@ -29,9 +34,11 @@ export default {
   flex-direction: column;
 }
 a {
-  color: rgb(86, 154, 231) !important;
+  /* color: rgb(246, 132, 79) !important; */
+  text-decoration: none;
 }
 a:hover {
+  text-decoration: none;
   transition: 0.3s;
   color: rgb(53, 53, 53) !important;
 }
