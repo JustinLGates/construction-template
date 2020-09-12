@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row pt-3">
     <div class="col-12 text-center p-2">
       <button class="btn btn-outline-primary">Request a Quote</button>
     </div>
