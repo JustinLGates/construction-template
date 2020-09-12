@@ -10,26 +10,30 @@
         </div>
       </div>
     </div>
-    <div class="row pt-4">
-      <div class="col-12 col-md-6">
-        <h2 class="p-2">Boise's best contractor</h2>
+    <div class="row pt-3 pt-md-5">
+      <div class="col-12 col-md-6 ">
+        <h2 class="p-2">Boise's best buliding team.</h2>
         <img class="img-fluid" src="@/assets/HeroImg.jpg" alt="img" />
-        <p class="p-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          perferendis possimus illo corrupti quam quod, dolorem beatae ducimus
-          quas sit! Tempora laudantium odit earum, id magni sed eos animi sit!
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          adipisci, explicabo pariatur sunt praesentium perspiciatis. Quos aut
-          possimus nobis culpa excepturi, repudiandae magni deleniti in magnam
-          doloremque reiciendis, odio enim!
-        </p>
-        <hr />
-        <h2></h2>
-        <ul>
-          <li>Point one</li>
-          <li>Point one</li>
-          <li>Point one</li>
-        </ul>
+        <div class="p-1">
+          <h5>Professional</h5>
+          <p>
+            We are ranked number one by the boise weekly. Our employees are
+            certified. Were licenced bonded insured.
+          </p>
+          <hr />
+          <h5>Highly recommended</h5>
+          <p>
+            We are ranked number one by the boise weekly. Our employees are
+            certified. Were licenced bonded insured.
+          </p>
+          <hr />
+          <h5>Highly recommended</h5>
+          <p>
+            We are ranked number one by the boise weekly. Our employees are
+            certified. Were licenced bonded insured.
+          </p>
+          <hr />
+        </div>
       </div>
       <div class="col-12 col-md-6">
         <Services />
