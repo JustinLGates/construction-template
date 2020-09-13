@@ -6,7 +6,7 @@
       </div>
 
       <div class="col-12 col-md-6">
-        <h2></h2>
+        <h2>Main title</h2>
         <img class="img-fluid" src="@/assets/portfolio1.jpg" alt="" />
        <h4>Job title / location / type of work</h4>
         <p>
@@ -16,7 +16,7 @@
       </div>
 
          <div class="col-12 col-md-6">
-        <h2></h2>
+        <h2>Main title</h2>
         <img class="img-fluid" src="@/assets/portfolio2.jpg" alt="" />
        <h4>Job title / location /type of work</h4>
         <p>

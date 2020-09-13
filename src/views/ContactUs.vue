@@ -5,7 +5,7 @@
         <h1>Contact us</h1>
       </div>
       <div class="col-12 col-md-7  m-auto ">
-        <form class="text-left p-2 form-box card bg-light shadow ">
+        <form class="text-left p-2 form-box card bg-light shadow m-auto ">
           <h2>Send us a message.</h2>
           <label class="label" for="name">Name</label>
           <input class="w-100" type="text" />

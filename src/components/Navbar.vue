@@ -120,6 +120,7 @@ export default {
 
 <style>
 .navbox {
+  z-index: 4;
   position: fixed;
 }
 .dropDownMenu {
