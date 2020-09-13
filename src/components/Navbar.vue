@@ -1,28 +1,30 @@
 <template>
   <div class="col-12 justify-content-end">
     <div class="row">
-      <nav class="col-12 d-none d-lg-flex p-2 justify-content-end">
-        <span class="p-2">
-          <router-link class="p-1 active-link" to="/">HOME</router-link>
-        </span>
-        <span class="p-2">
-          <router-link class="p-1 routeLink" to="/about">ABOUT</router-link>
-        </span>
-        <span class="p-2">
-          <router-link class="p-1 routeLink" to="/services"
-            >SERVICES</router-link
-          >
-        </span>
-        <span class="p-2">
-          <router-link class="p-1 routeLink" to="/portfolio"
-            >PORTFOLIO</router-link
-          >
-        </span>
-        <span class="p-2">
-          <router-link class="p-1 routeLink" to="/contactus"
-            >CONTACT US</router-link
-          >
-        </span>
+      <nav class="col-12 d-none d-lg-flex bg-dark justify-content-end">
+        <div class=" navbox bg-light p-2">
+          <span class="p-2">
+            <router-link class="p-1 routeLink" to="/">HOME</router-link>
+          </span>
+          <span class="p-2">
+            <router-link class="p-1 routeLink" to="/about">ABOUT</router-link>
+          </span>
+          <span class="p-2">
+            <router-link class="p-1 routeLink" to="/services"
+              >SERVICES</router-link
+            >
+          </span>
+          <span class="p-2">
+            <router-link class="p-1 routeLink" to="/portfolio"
+              >PORTFOLIO</router-link
+            >
+          </span>
+          <span class="p-2">
+            <router-link class="p-1 routeLink" to="/contactus"
+              >CONTACT US</router-link
+            >
+          </span>
+        </div>
       </nav>
     </div>
     <div class="row">
@@ -40,7 +42,7 @@
           <div>
             <span
               @click="toggleNavDropDown"
-              class="dropDownMenuButton action bg-dark text-light p-2"
+              class="dropDownMenuButton action bg-light text-dark p-2"
             >
               <h5>
                 <i class="fas fa-arrow-circle-up"></i>
@@ -49,23 +51,30 @@
             </span>
           </div>
           <div class="p-2">
-            <router-link class="p-1 routeLink" to="/">HOME</router-link>
+            <router-link @click="setActive" class="p-1 routeLink" to="/"
+              >HOME</router-link
+            >
           </div>
           <div class="p-2">
-            <router-link class="p-1 routeLink" to="/about">ABOUT</router-link>
+            <router-link @click="setActive" class="p-1 routeLink" to="/about"
+              >ABOUT</router-link
+            >
           </div>
           <div class="p-2">
-            <router-link class="p-1 routeLink" to="/services"
+            <router-link @click="setActive" class="p-1 routeLink" to="/services"
               >SERVICES</router-link
             >
           </div>
           <div class="p-2">
-            <router-link class="p-1 routeLink" to="/portfolio"
+            <router-link
+              @click="setActive"
+              class="p-1 routeLink"
+              to="/portfolio"
               >PORTFOLIO</router-link
             >
           </div>
           <div class="p-2">
-            <router-link class="routeLink" to="/contactus"
+            <router-link @click="setActive" class="routeLink" to="/contactus"
               >CONTACT US</router-link
             >
           </div>
@@ -73,7 +82,7 @@
         <span
           v-else
           @click="toggleNavDropDown"
-          class="dropDownMenuButton action bg-dark text-light p-2"
+          class="dropDownMenuButton action bg-light text-primary p-2"
         >
           <h5>
             <i class="fas fa-arrow-circle-down"></i>
@@ -89,7 +98,6 @@
 export default {
   data() {
     return {
-      toggle: false,
       navDropDown: false,
       navDropDownAnimToggle: false,
     };
@@ -100,15 +108,20 @@ export default {
       this.navDropDown
         ? setTimeout(() => {
             this.navDropDown = !this.navDropDown;
-          }, 650)
+          }, 350)
         : (this.navDropDown = !this.navDropDown);
     },
-    linkClick() {},
+    setActive() {
+      this.toggleNavDropDown();
+    },
   },
 };
 </script>
 
 <style>
+.navbox {
+  position: fixed;
+}
 .dropDownMenu {
   z-index: 2;
   top: 3rem;
@@ -136,7 +149,7 @@ export default {
 .slide-out {
   animation-name: slide-out-vertical;
   animation-iteration-count: 1;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-direction: reverse;
 }
 .routeLink {

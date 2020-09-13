@@ -1,7 +1,7 @@
 <template>
   <div id="app container bg-light">
     <!-- <Navbar /> -->
-    <div class="col-12 col-md-10 col-xl-8 m-auto">
+    <div class="col-12 col-md-11 col-xl-9 m-auto">
       <div class="row">
         <Header />
         <router-view class="selected-view" />
@@ -44,5 +44,8 @@ a:hover {
 }
 .selected-view {
   flex-grow: 1;
+}
+h1 {
+  border-bottom: solid darkorange 3px;
 }
 </style>

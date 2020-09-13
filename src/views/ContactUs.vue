@@ -1,9 +1,27 @@
 <template>
   <div class="col-12">
     <div class="row">
-      <div class="col-12 col-lg-8 my-3">
-        <h1 class="p-2 text-center">Contact us</h1>
-        <div class="pt-5">
+      <div class="col-12">
+        <h1>Contact us</h1>
+      </div>
+      <div class="col-12 col-md-7  m-auto ">
+        <form class="text-left p-2 form-box card bg-light shadow ">
+          <h2>Send us a message.</h2>
+          <label class="label" for="name">Name</label>
+          <input class="w-100" type="text" />
+          <br />
+          <label class="label" for="name">E-mail</label>
+          <input class="w-100" type="text" />
+          <br />
+          <label class="label" for="name">Message</label>
+          <textarea class="w-100" type="text" rows="8" />
+        </form>
+      </div>
+      <div class="col-12 col-md-5 my-3">
+        <ServicesComp />
+      </div>
+      <div class="col-12 col-lg-10 m-auto pt-2">
+        <div class="pt-3">
           <h6>3402 Cleveland Blvd, Caldwell, ID 83605</h6>
           <iframe
             class="map img-fluid"
@@ -16,75 +34,12 @@
             aria-hidden="false"
             tabindex="0"
           ></iframe>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-            tempore corrupti architecto, id, veritatis quod dicta mollitia
-            libero totam repellendus distinctio quas hic cum. Itaque libero a
-            corrupti et dicta?
-          </p>
+          <h2>
+            Call us for all of your construction needs
+          </h2>
+          <h2 class="text-primary">(208)888-8888</h2>
         </div>
       </div>
-
-      <div class="col-12 col-lg-4 my-3">
-        <ServicesComp />
-      </div>
-    </div>
-    <div class="col-12">
-      <form className="text-left p-lg-4 px-lg-5 mx-lg-5 shadow">
-        <label className="p-1 pt-3 px-2 m-0">
-          Name
-        </label>
-        <br />
-        <input
-          className="p-2 w-100"
-          type="text"
-          placeholder="Name"
-          name="name"
-          required
-        />
-        <br />
-        <label className="p-1 m-0 mt-3 px-2">
-          E-mail
-        </label>
-        <br />
-        <input
-          className="p-2 w-100"
-          type="text"
-          placeholder="john@email.com"
-          name="Email"
-          required
-        />
-        <br />
-        <label className="p-1 m-0 pt-3 px-2">
-          Phone
-        </label>
-        <br />
-        <input
-          className="p-2 w-100"
-          type="text"
-          placeholder="If you prefer a phone call (208-123-4567)"
-          name="phone"
-        />
-        <br />
-        <label className="pt-3 px-2 m-0">
-          Message
-        </label>
-        <textarea
-          name="Body"
-          placeholder="What would you like to know"
-          className="w-100 px-2 p-2"
-          required
-        />
-        <br />
-        <div className="d-flex justify-content-around pt-3 ">
-          <button className="btn btn-outline-primary">
-            Submit
-          </button>
-          <button className="btn btn-danger">
-            Clear form
-          </button>
-        </div>
-      </form>
     </div>
   </div>
 </template>
@@ -102,5 +57,11 @@ export default {
 <style>
 .map {
   height: 500px;
+}
+.form-box {
+  max-width: 500px;
+}
+.label {
+  min-width: 5rem;
 }
 </style>
