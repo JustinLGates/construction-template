@@ -7,10 +7,8 @@
 
       <div class="col-12 col-md-6">
         <h2>We provide high quality constuction at a competitive price.</h2>
-        <img class="img-fluid" src="@/assets/ServicesPhoto.jpg" alt="" />
-        <h4>
-          Specializing in Commercial
-        </h4>
+        <img class="img-fluid" src="../assets/ServicesPhoto.jpg" alt />
+        <h4>Specializing in Commercial</h4>
         <p>
           et out to disrupt the building world. Lorem ipsum dolor sit, amet
           consectetur adipisicing el

@@ -5,13 +5,11 @@
         <h1>About</h1>
       </div>
 
-      <div class="col-12 m-auto col-md-6 ">
+      <div class="col-12 m-auto col-md-6">
         <h2>We love what we do.</h2>
-        <img class="img-fluid" src="@/assets/AboutPhoto1.jpg" alt="" />
+        <img class="img-fluid" src="../assets/AboutPhoto1.jpg" alt />
         <div class="p-2">
-          <h4>
-            Founded in 2002 by jim bob.
-          </h4>
+          <h4>Founded in 2002 by jim bob.</h4>
           <p>
             et out to disrupt the building world. Lorem ipsum dolor sit, amet
             consectetur adipisicing el
@@ -30,7 +28,7 @@
         </div>
       </div>
 
-      <div class="col-12  col-md-6 ">
+      <div class="col-12 col-md-6">
         <ServiceComp />
       </div>
     </div>

@@ -6,17 +6,17 @@
       </div>
       <div class="col-12 col-lg-10 col-xl-8 m-auto p-2">
         <div class="text-center">
-          <img class="img-fluid " src="@/assets/TeamImg.jpg" alt="img" />
-          <div class="photo-caption ">
+          <img class="img-fluid" src="../assets/TeamImg.jpg" alt="img" />
+          <div class="photo-caption">
             <p class="p-2 m-0">You have found the expert your looking for.</p>
           </div>
         </div>
       </div>
     </div>
     <div class="row pt-3 pt-md-5">
-      <div class="col-12 col-md-6 ">
+      <div class="col-12 col-md-6">
         <h2 class="p-2">Boise's best buliding team.</h2>
-        <img class="img-fluid " src="@/assets/HeroImg.jpg" alt="img" />
+        <img class="img-fluid" src="../assets/HeroImg.jpg" alt="img" />
         <div class="p-1 pt-3">
           <h5>Professional</h5>
           <p>
